@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decodificador</title>
-    <link rel="stylesheet" href="style.css"> 
-</head>
-<body class="conteudo__total">
-    <header>
-    </header>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="conteudo__total">
+    <header></header>
 
     <main class="apresentacao">
-        <section class="apresentacao__titulo">
-            <div>
-                <img class="apresentacao__imagem__alura" src="/assets/logoAlura.png" alt="Logo da Alura">
-            </div>
+      <section class="apresentacao__titulo">
+        <div>
+          <img
+            class="apresentacao_imagem_alura"
+            src="/assets/logoAlura.png"
+            alt="Logo da Alura"
+          />
+        </div>
 
-            <div>
-                <h1 class="apresentacao__titulo__texto">Challenge Turma 06-Decodificador de Texto</h1>
-            </div>
+        <div>
+          <h1 class="apresentacao_titulo_texto">
+            Challenge Turma 06-Decodificador de Texto
+          </h1>
+        </div>
 
-            <div>
-                <img class="apresentacao__imagem__one" src="/assets/logo-oracle-one6.png" alt="Logo do Programa Oracle One">
-            </div>
+        <div>
+          <img
+            class="apresentacao_imagem_one"
+            src="/assets/logo-oracle-one6.png"
+            alt="Logo do Programa Oracle One"
+          />
+        </div>
+      </section>
+
+      <section class="apresentacao__conteudo">
+        <section class="apresentacao_conteudotexto_area_digitacao">
+          <textarea
+            class="texto__area"
+            cols="40"
+            rows="10"
+            placeholder="Digite o texto a ser criptografado"
+          ></textarea>
+          <div class="apresentacao_conteudotextoarea_informacao">
+            <img src="/assets/iconeAlerta.png" />
+            Apenas letras minúsculas e sem acento!
+          </div>
         </section>
 
-        <section class="apresentacao__conteudo">
-            <section class="apresentacao__conteudo__texto__area_digitacao">
-                <textarea class="texto__area" cols="40" rows="10" placeholder="Digite o texto a ser criptografado"></textarea>
-                <div class="apresentacao__conteudo__texto__area__informacao">
-                    <img src="/assets/iconeAlerta.png">
-                    Apenas letras minúsculas e sem acento!
-                </div>
-            </section>
-            
-            <div class="botoes">
-                <button class="botao" onclick="botaoEncriptar()">Criptografar</button>             
-                <button class="botao" onclick="botaoDesencriptar()">Descriptografar</button>
-                <button class="botao" onclick="copiarTexto()">Copiar</button>
-                <button class="botao" onclick="limparTexto()">Limpar</button>
-            </div>
+        <div class="botoes">
+          <button class="botao" onclick="botaoEncriptar()">Criptografar</button>
+          <button class="botao" onclick="botaoDesencriptar()">
+            Descriptografar
+          </button>
+          <button class="botao" onclick="copiarTexto()">Copiar</button>
+          <button class="botao" onclick="limparTexto()">Limpar</button>
+        </div>
 
-            <textarea class="texto__mensagem__codificada" cols="40" rows="20" placeholder="Criptografando..."></textarea>
-        </section>
-
+        <textarea
+          class="texto_mensagem_codificada"
+          cols="40"
+          rows="20"
+          placeholder="Criptografando..."
+        ></textarea>
+      </section>
     </main>
     <script src="app.js"></script>
     <footer class="rodape">
-        <p>Desenvolvido por Lucas F. Vinente</p>
+      <p>Desenvolvido por Lucas F. Vinente</p>
     </footer>
-</body>
+  </body>
 </html>
